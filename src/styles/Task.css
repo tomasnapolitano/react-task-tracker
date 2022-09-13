@@ -1,0 +1,15 @@
+.taskBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.taskBox h2{
+    font-size: large;
+}
+.taskBox:hover{
+    background-color: antiquewhite;
+}

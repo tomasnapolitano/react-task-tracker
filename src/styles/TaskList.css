@@ -1,0 +1,6 @@
+.listContainer{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(52, 110, 190);
+    border-radius: 5px;
+}

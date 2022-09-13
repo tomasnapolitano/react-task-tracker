@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-family:'Poppins';
   
 }
 .root{
@@ -15,6 +21,6 @@ body {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 40%;
   height: 100vh;
 }
