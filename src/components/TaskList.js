@@ -18,10 +18,25 @@ const TaskList = () => {
         }
     }
 
+    const deleteTask = (id) => {
+        const updatedTasks = tasks.filter(task => task.id != id);
+        setTasks(updatedTasks);
+    }
+
+    const completedTask = (id) => {
+        const updatedTasks = tasks.map((task) => {
+            if (task.id == id) {
+                task.complete = !task.complete;
+            }
+            return task;
+        })
+        setTasks = updatedTasks;
+    }
+
     return(
         <div className='listContainer'>
             <TaskForm formSubmit={addTask}/>
-            {tasks.map((task)=>(<Task key={task.id}title={task.title}/>))}
+            {tasks.map((task)=>(<Task deleteTask={deleteTask} key={task.id}title={task.title} complete={task.complete}/>))}
         </div>
     )
 }
